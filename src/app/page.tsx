@@ -15,7 +15,7 @@ export default function Home() {
       
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 py-12 rounded-xl" style={{ backgroundColor: 'rgb(231, 208, 185)' }}>
           <h1 className="text-4xl md:text-6xl font-display font-bold text-neutral-900 mb-6">
             AI Family Support
             <span className="text-primary-500 block">Assistant</span>

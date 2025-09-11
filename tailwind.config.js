@@ -9,43 +9,43 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: '#f0f9f4',   // Very light green
+          50: '#f0f9f4',
           100: '#e1f3e9',
           200: '#c3e7d3',
           300: '#a5dbbd',
           400: '#87cfa7',
-          500: '#18402e',   // Your exact primary dark green
-          600: '#2b5240',   // Your exact secondary green
-          700: '#1a3828',
-          800: '#153020',
-          900: '#102818',
+          500: '#18402e',   // Your exact button color
+          600: '#153020',
+          700: '#12281c',
+          800: '#0f2018',
+          900: '#0c1814',
         },
         secondary: {
-          50: '#f9f5ea',   // Your exact cream background
+          50: '#f8f5ea',   // Your exact header color
           100: '#f3ebd5',
           200: '#e7d7ab',
           300: '#dbc381',
           400: '#cfaf57',
-          500: '#da816c',  // Your exact terracotta accent
+          500: '#da816c',  // Your exact button color
           600: '#c4735f',
           700: '#9e5c4c',
           800: '#784539',
           900: '#522e26',
         },
         accent: {
-          50: '#fef7f7',   // Very light pink
-          100: '#fdeaea',
-          200: '#fbd5d5',
-          300: '#f9c0c0',
-          400: '#f7abab',
-          500: '#f39d99',  // Your exact pink accent
-          600: '#da8d89',
-          700: '#c17d79',
-          800: '#a86d69',
-          900: '#8f5d59',
+          50: '#f8f5ea',   // Your exact below masthead background
+          100: '#f3ebd5',
+          200: '#e7d7ab',
+          300: '#dbc381',
+          400: '#cfaf57',
+          500: '#e7d0b9',  // Your exact main masthead background
+          600: '#d4c4a8',
+          700: '#c1b897',
+          800: '#aeac86',
+          900: '#9ba075',
         },
         neutral: {
-          50: '#f9f9f9',
+          50: '#f8f5ea',   // Your exact header color
           100: '#f3f3f3',
           200: '#e7e7e7',
           300: '#d1d1d1',

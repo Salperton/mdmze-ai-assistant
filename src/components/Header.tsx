@@ -2,7 +2,7 @@ import { Heart } from 'lucide-react'
 
 export default function Header() {
   return (
-    <header className="bg-white shadow-sm border-b border-neutral-200">
+    <header className="shadow-sm border-b border-neutral-200" style={{ backgroundColor: 'rgb(248, 245, 234)' }}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
