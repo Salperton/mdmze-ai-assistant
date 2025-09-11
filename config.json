@@ -1,0 +1,22 @@
+{
+  "webflow": {
+    "apiKey": "your_webflow_api_key_here",
+    "siteId": "your_webflow_site_id_here",
+    "baseUrl": "https://api.webflow.com/v2"
+  },
+  "openai": {
+    "apiKey": "your_openai_api_key_here",
+    "model": "gpt-3.5-turbo"
+  },
+  "nextjs": {
+    "port": 3000,
+    "env": "development"
+  },
+  "mcp": {
+    "enabled": true,
+    "remote": {
+      "host": "localhost",
+      "port": 3001
+    }
+  }
+}

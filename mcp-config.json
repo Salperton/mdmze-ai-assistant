@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "webflow-mcp": {
+      "command": "node",
+      "args": ["mcp-server.js"],
+      "env": {
+        "WEBFLOW_API_KEY": "your_webflow_api_key_here",
+        "WEBFLOW_SITE_ID": "your_webflow_site_id_here"
+      }
+    }
+  }
+}
