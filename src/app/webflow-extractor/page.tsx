@@ -1,11 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import WebflowAPI from '@/lib/webflow-api'
 
 export default function WebflowExtractor() {
-  const [apiKey, setApiKey] = useState('')
-  const [siteId, setSiteId] = useState('')
+  const [apiKey, setApiKey] = useState('1ab7168d3c3f306f227a91405fa2d4a1c0d7894ec0896134aa801270ee311d03')
+  const [siteId, setSiteId] = useState('6419edfba04104bd365d36a3')
   const [designTokens, setDesignTokens] = useState([])
   const [components, setComponents] = useState([])
   const [loading, setLoading] = useState(false)
@@ -17,17 +16,39 @@ export default function WebflowExtractor() {
     }
 
     setLoading(true)
-    const webflowAPI = new WebflowAPI(apiKey, siteId)
+    setDesignTokens([])
+    setComponents([])
     
     try {
-      const tokens = await webflowAPI.getDesignTokens()
-      const comps = await webflowAPI.getComponents()
+      console.log('Starting extraction...')
       
-      setDesignTokens(tokens)
-      setComponents(comps)
+      const response = await fetch('/api/webflow', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          apiKey,
+          siteId
+        })
+      })
+      
+      const data = await response.json()
+      
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to extract data')
+      }
+      
+      console.log('Extraction successful:', data)
+      
+      setDesignTokens(data.designTokens)
+      setComponents(data.components)
+      
+      alert(data.message || `Successfully extracted ${data.designTokens.length} design tokens and ${data.components.length} components!`)
     } catch (error) {
       console.error('Error extracting data:', error)
-      alert('Error extracting data. Check your API credentials.')
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred'
+      alert(`Error extracting data: ${errorMessage}`)
     } finally {
       setLoading(false)
     }

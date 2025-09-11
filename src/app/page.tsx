@@ -10,6 +10,7 @@ import Card from '@/components/ui/Card'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'chat' | 'assessment'>('chat')
+  const [assessmentResults, setAssessmentResults] = useState<any>(null)
 
   return (
     <main className="min-h-screen">
@@ -87,16 +88,19 @@ export default function Home() {
 
             {/* Tab Content */}
             {activeTab === 'chat' ? (
-              <ChatInterface />
+              <ChatInterface assessmentResults={assessmentResults} />
             ) : (
-              <AssessmentScales />
+              <AssessmentScales onAssessmentComplete={(assessmentId, results) => {
+                setAssessmentResults(results)
+                setActiveTab('chat') // Switch to chat tab to show AI feedback
+              }} />
             )}
           </div>
         </div>
 
         {/* Footer */}
         <footer className="text-center py-8 mt-12 text-neutral-600 font-sans">
-          <p>Powered by MDMZE Family Support Center</p>
+          <p>Powered by Mind Maze Family Support Center</p>
           <p className="text-sm mt-2">
             This AI assistant provides general guidance and should not replace professional counseling.
           </p>

@@ -6,11 +6,13 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-8 lg:px-12 py-4 max-w-7xl">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgb(24, 64, 46)' }}>
-              <Heart className="w-6 h-6 text-white" />
-            </div>
+            <img 
+              src="https://raw.githubusercontent.com/Salperton/mdmze-ai-assistant/refs/heads/main/Hero%20Logo.svg" 
+              alt="Mind Maze Logo" 
+              className="w-20 h-20 object-contain"
+            />
             <div>
-              <h1 className="text-xl font-display font-bold" style={{ color: 'rgb(24, 64, 46)' }}>MDMZE</h1>
+              <h1 className="text-xl font-display font-bold" style={{ color: 'rgb(24, 64, 46)' }}>Mind Maze</h1>
               <p className="text-sm font-sans" style={{ color: 'rgb(17, 17, 17)' }}>Family Support Center</p>
             </div>
           </div>

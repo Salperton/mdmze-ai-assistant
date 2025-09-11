@@ -4,8 +4,8 @@
       "command": "node",
       "args": ["mcp-server.js"],
       "env": {
-        "WEBFLOW_API_KEY": "your_webflow_api_key_here",
-        "WEBFLOW_SITE_ID": "your_webflow_site_id_here"
+        "WEBFLOW_API_KEY": "1ab7168d3c3f306f227a91405fa2d4a1c0d7894ec0896134aa801270ee311d03",
+        "WEBFLOW_SITE_ID": "6419edfba04104bd365d36a3"
       }
     }
   }

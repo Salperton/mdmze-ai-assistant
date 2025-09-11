@@ -21,6 +21,233 @@ interface Assessment {
 
 const assessments: Assessment[] = [
   {
+    id: 'dass-21',
+    title: 'DASS-21: Depression, Anxiety & Stress Scale',
+    description: 'A validated 21-item scale to assess depression, anxiety, and stress levels. This is a widely used clinical assessment tool.',
+    questions: [
+      // Depression items (1, 3, 6, 8, 9, 14, 18, 19, 21)
+      {
+        id: 'q1',
+        text: 'I found it hard to wind down',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q2',
+        text: 'I was aware of dryness of my mouth',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q3',
+        text: 'I couldn\'t seem to experience any positive feeling at all',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q4',
+        text: 'I experienced breathing difficulty (e.g., excessively rapid breathing, breathlessness in the absence of physical exertion)',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q5',
+        text: 'I found it difficult to work up the initiative to do things',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q6',
+        text: 'I tended to over-react to situations',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q7',
+        text: 'I experienced trembling (e.g., in the hands)',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q8',
+        text: 'I felt that I was using a lot of nervous energy',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q9',
+        text: 'I was worried about situations in which I might panic and make a fool of myself',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q10',
+        text: 'I felt that I had nothing to look forward to',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q11',
+        text: 'I found myself getting agitated',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q12',
+        text: 'I found it difficult to relax',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q13',
+        text: 'I felt down-hearted and blue',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q14',
+        text: 'I was intolerant of anything that kept me from getting on with what I was doing',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q15',
+        text: 'I felt I was close to panic',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q16',
+        text: 'I was unable to become enthusiastic about anything',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q17',
+        text: 'I felt I wasn\'t worth much as a person',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q18',
+        text: 'I felt that I was rather touchy',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q19',
+        text: 'I was aware of the action of my heart in the absence of physical exertion (e.g., sense of heart rate increase, heart missing a beat)',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q20',
+        text: 'I felt scared without any good reason',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      },
+      {
+        id: 'q21',
+        text: 'I felt that life was meaningless',
+        options: [
+          { value: 0, label: 'Did not apply to me at all' },
+          { value: 1, label: 'Applied to me to some degree, or some of the time' },
+          { value: 2, label: 'Applied to me to a considerable degree, or a good part of the time' },
+          { value: 3, label: 'Applied to me very much, or most of the time' }
+        ]
+      }
+    ],
+    scoring: {
+      ranges: [
+        { min: 0, max: 9, label: 'Normal', description: 'Your depression, anxiety, and stress levels are within normal range.' },
+        { min: 10, max: 13, label: 'Mild', description: 'You may be experiencing mild symptoms. Consider self-care strategies and monitoring.' },
+        { min: 14, max: 20, label: 'Moderate', description: 'You are experiencing moderate symptoms. Professional support may be beneficial.' },
+        { min: 21, max: 27, label: 'Severe', description: 'You are experiencing severe symptoms. Professional support is recommended.' },
+        { min: 28, max: 42, label: 'Extremely Severe', description: 'You are experiencing extremely severe symptoms. Immediate professional support is strongly recommended.' }
+      ]
+    }
+  },
+  {
     id: 'parenting-stress',
     title: 'Parenting Stress Assessment',
     description: 'Evaluate your current stress levels related to parenting and identify areas for support.',
@@ -162,7 +389,11 @@ const assessments: Assessment[] = [
   }
 ]
 
-export default function AssessmentScales() {
+interface AssessmentScalesProps {
+  onAssessmentComplete?: (assessmentId: string, results: any) => void
+}
+
+export default function AssessmentScales({ onAssessmentComplete }: AssessmentScalesProps) {
   const [selectedAssessment, setSelectedAssessment] = useState<Assessment | null>(null)
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [answers, setAnswers] = useState<Record<string, number>>({})
@@ -181,6 +412,23 @@ export default function AssessmentScales() {
   }
 
   const calculateResults = () => {
+    const dassScores = getDASSScores()
+    const results = {
+      assessmentId: selectedAssessment?.id,
+      assessmentTitle: selectedAssessment?.title,
+      score: getScore(),
+      maxScore: selectedAssessment ? selectedAssessment.questions.length * 5 : 0,
+      scoreRange: getScoreRange(),
+      answers: answers,
+      completedAt: new Date().toISOString(),
+      ...(dassScores && { dassScores })
+    }
+    
+    // Pass results to parent component (for AI integration)
+    if (onAssessmentComplete && selectedAssessment) {
+      onAssessmentComplete(selectedAssessment.id, results)
+    }
+    
     setShowResults(true)
   }
 
@@ -196,8 +444,31 @@ export default function AssessmentScales() {
     return Object.values(answers).reduce((sum, score) => sum + score, 0)
   }
 
+  const getDASSScores = () => {
+    if (!selectedAssessment || selectedAssessment.id !== 'dass-21') return null
+    
+    // DASS-21 subscale items (0-indexed)
+    const depressionItems = [2, 4, 8, 9, 12, 15, 16, 19, 20] // q3, q5, q9, q10, q13, q16, q17, q20, q21
+    const anxietyItems = [1, 3, 6, 7, 10, 11, 14, 18] // q2, q4, q7, q8, q11, q12, q15, q19
+    const stressItems = [0, 5, 13, 17] // q1, q6, q14, q18
+    
+    const depressionScore = depressionItems.reduce((sum, idx) => sum + (answers[`q${idx + 1}`] || 0), 0) * 2
+    const anxietyScore = anxietyItems.reduce((sum, idx) => sum + (answers[`q${idx + 1}`] || 0), 0) * 2
+    const stressScore = stressItems.reduce((sum, idx) => sum + (answers[`q${idx + 1}`] || 0), 0) * 2
+    
+    return { depression: depressionScore, anxiety: anxietyScore, stress: stressScore }
+  }
+
   const getScoreRange = () => {
     if (!selectedAssessment) return null
+    
+    if (selectedAssessment.id === 'dass-21') {
+      const totalScore = getScore()
+      return selectedAssessment.scoring.ranges.find(range => 
+        totalScore >= range.min && totalScore <= range.max
+      )
+    }
+    
     const score = getScore()
     return selectedAssessment.scoring.ranges.find(range => 
       score >= range.min && score <= range.max
@@ -206,6 +477,8 @@ export default function AssessmentScales() {
 
   if (showResults && selectedAssessment) {
     const scoreRange = getScoreRange()
+    const dassScores = getDASSScores()
+    
     return (
       <div className="text-center">
         <div className="mb-6">
@@ -214,37 +487,92 @@ export default function AssessmentScales() {
           <p className="text-gray-600">Your {selectedAssessment.title} Results</p>
         </div>
 
-        <div className="card max-w-md mx-auto mb-6">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-primary-600 mb-2">
-              {getScore()}/{selectedAssessment.questions.length * 5}
+        {selectedAssessment.id === 'dass-21' && dassScores ? (
+          <div className="space-y-4 mb-6">
+            <div className="card max-w-2xl mx-auto">
+              <div className="text-center mb-4">
+                <div className="text-2xl font-bold text-primary-600 mb-2">
+                  Overall Score: {getScore()}/63
+                </div>
+                <div className="text-lg font-semibold text-gray-900 mb-2">
+                  {scoreRange?.label}
+                </div>
+                <p className="text-gray-600">
+                  {scoreRange?.description}
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-3 gap-4 mt-4">
+                <div className="text-center p-3 bg-blue-50 rounded-lg">
+                  <div className="text-xl font-bold text-blue-600">{dassScores.depression}</div>
+                  <div className="text-sm text-gray-600">Depression</div>
+                </div>
+                <div className="text-center p-3 bg-yellow-50 rounded-lg">
+                  <div className="text-xl font-bold text-yellow-600">{dassScores.anxiety}</div>
+                  <div className="text-sm text-gray-600">Anxiety</div>
+                </div>
+                <div className="text-center p-3 bg-red-50 rounded-lg">
+                  <div className="text-xl font-bold text-red-600">{dassScores.stress}</div>
+                  <div className="text-sm text-gray-600">Stress</div>
+                </div>
+              </div>
             </div>
-            <div className="text-xl font-semibold text-gray-900 mb-2">
-              {scoreRange?.label}
-            </div>
-            <p className="text-gray-600">
-              {scoreRange?.description}
-            </p>
           </div>
-        </div>
+        ) : (
+          <div className="card max-w-md mx-auto mb-6">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-primary-600 mb-2">
+                {getScore()}/{selectedAssessment.questions.length * 5}
+              </div>
+              <div className="text-xl font-semibold text-gray-900 mb-2">
+                {scoreRange?.label}
+              </div>
+              <p className="text-gray-600">
+                {scoreRange?.description}
+              </p>
+            </div>
+          </div>
+        )}
 
         <div className="space-y-3">
           <button
-            onClick={resetAssessment}
-            className="btn-primary"
-          >
-            Take Another Assessment
-          </button>
-          <button
             onClick={() => {
-              setShowResults(false)
-              setCurrentQuestion(0)
-              setAnswers({})
+              const results = {
+                assessmentId: selectedAssessment?.id,
+                assessmentTitle: selectedAssessment?.title,
+                score: getScore(),
+                maxScore: selectedAssessment ? selectedAssessment.questions.length * 5 : 0,
+                scoreRange: getScoreRange(),
+                answers: answers,
+                completedAt: new Date().toISOString()
+              }
+              if (onAssessmentComplete && selectedAssessment) {
+                onAssessmentComplete(selectedAssessment.id, results)
+              }
             }}
-            className="btn-secondary"
+            className="btn-primary w-full"
           >
-            Retake This Assessment
+            <Brain className="w-4 h-4 mr-2" />
+            Get AI Feedback on Results
           </button>
+          <div className="flex space-x-3">
+            <button
+              onClick={resetAssessment}
+              className="btn-secondary flex-1"
+            >
+              Take Another Assessment
+            </button>
+            <button
+              onClick={() => {
+                setShowResults(false)
+                setCurrentQuestion(0)
+                setAnswers({})
+              }}
+              className="btn-secondary flex-1"
+            >
+              Retake This Assessment
+            </button>
+          </div>
         </div>
       </div>
     )

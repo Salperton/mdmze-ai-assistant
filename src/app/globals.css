@@ -6,14 +6,22 @@
 
 :root {
   --foreground-rgb: 17, 17, 17;
-  --header-bg: 249, 245, 234;      -- #f9f5ea - Your exact header color
-  --masthead-bg: 249, 245, 234;    -- #f9f5ea - Your exact background
-  --below-masthead-bg: 249, 245, 234; -- #f9f5ea - Your exact background
-  --terracotta-button: 218, 129, 108; -- #da816c - Your exact terracotta
-  --green-button: 24, 64, 46;      -- #18402e - Your exact dark green
-  --text-green: 24, 64, 46;        -- #18402e - Your exact dark green text
-  --text-gray: 17, 17, 17;         -- #111111 - Your exact dark text
-  --pink-accent: 243, 157, 153;    -- #f39d99 - Your exact pink accent
+  /* #f9f5ea - Your exact header color */
+  --header-bg: 249, 245, 234;
+  /* #f9f5ea - Your exact background */
+  --masthead-bg: 249, 245, 234;
+  /* #f9f5ea - Your exact background */
+  --below-masthead-bg: 249, 245, 234;
+  /* #da816c - Your exact terracotta */
+  --terracotta-button: 218, 129, 108;
+  /* #18402e - Your exact dark green */
+  --green-button: 24, 64, 46;
+  /* #18402e - Your exact dark green text */
+  --text-green: 24, 64, 46;
+  /* #111111 - Your exact dark text */
+  --text-gray: 17, 17, 17;
+  /* #f39d99 - Your exact pink accent */
+  --pink-accent: 243, 157, 153;
 }
 
 body {
@@ -53,4 +61,44 @@ body {
   .input-field {
     @apply w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 font-sans;
   }
+}
+
+/* Custom animations for chat interface */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Smooth scrolling for chat messages */
+.chat-container {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for chat */
+.chat-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
 }

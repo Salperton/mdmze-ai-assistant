@@ -1,7 +1,7 @@
 {
   "webflow": {
-    "apiKey": "your_webflow_api_key_here",
-    "siteId": "your_webflow_site_id_here",
+    "apiKey": "1ab7168d3c3f306f227a91405fa2d4a1c0d7894ec0896134aa801270ee311d03",
+    "siteId": "6419edfba04104bd365d36a3",
     "baseUrl": "https://api.webflow.com/v2"
   },
   "openai": {
