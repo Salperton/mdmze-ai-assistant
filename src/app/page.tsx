@@ -5,6 +5,8 @@ import { MessageCircle, Brain, Users, Heart } from 'lucide-react'
 import ChatInterface from '@/components/ChatInterface'
 import AssessmentScales from '@/components/AssessmentScales'
 import Header from '@/components/Header'
+import Button from '@/components/ui/Button'
+import Card from '@/components/ui/Card'
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'chat' | 'assessment'>('chat')
@@ -29,29 +31,29 @@ export default function Home() {
 
         {/* Feature Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
-          <div className="card text-center">
+          <Card className="text-center">
             <MessageCircle className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(24, 64, 46)' }} />
             <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>AI Chat Support</h3>
             <p className="font-sans" style={{ color: 'rgb(17, 17, 17)' }}>
               Get instant answers to your family and parenting questions with our advanced AI assistant.
             </p>
-          </div>
+          </Card>
           
-          <div className="card text-center">
+          <Card className="text-center">
             <Brain className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(218, 129, 108)' }} />
             <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>Psychological Assessments</h3>
             <p className="font-sans" style={{ color: 'rgb(17, 17, 17)' }}>
               Take personalized assessments to better understand your situation and get tailored advice.
             </p>
-          </div>
+          </Card>
           
-          <div className="card text-center">
+          <Card className="text-center">
             <Users className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(24, 64, 46)' }} />
             <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>Expert Guidance</h3>
             <p className="font-sans" style={{ color: 'rgb(17, 17, 17)' }}>
               Access evidence-based strategies and professional insights for family challenges.
             </p>
-          </div>
+          </Card>
         </div>
 
         {/* Main Interface */}
