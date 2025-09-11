@@ -129,7 +129,7 @@ export async function POST(request: NextRequest) {
         name: 'Assets',
         styles: {
           'count': assets.items?.length || 0,
-          'types': [...new Set(assets.items?.map((a: any) => a.type) || [])].join(', ')
+          'types': Array.from(new Set(assets.items?.map((a: any) => a.type) || [])).join(', ')
         },
         children: []
       },
