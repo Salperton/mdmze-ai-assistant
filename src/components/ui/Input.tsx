@@ -30,9 +30,7 @@ export default function Input({
       style={{
         borderColor: 'rgb(209, 213, 219)',
         color: 'rgb(17, 17, 17)',
-        backgroundColor: 'rgb(255, 255, 255)',
-        '--focus-ring': 'rgb(24, 64, 46)',
-        '--focus-border': 'transparent'
+        backgroundColor: 'rgb(255, 255, 255)'
       }}
       onFocus={(e) => {
         e.target.style.borderColor = 'transparent'
