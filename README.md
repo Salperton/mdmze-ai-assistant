@@ -6,9 +6,18 @@ An AI-powered family support tool that provides instant guidance on family matte
 
 - 🤖 **AI Chat Interface** - Get instant, personalized advice using OpenAI's GPT models
 - 🧠 **Psychological Assessments** - Take evidence-based assessments for tailored guidance
+  - **DASS-21 Scale** - Depression, Anxiety, and Stress assessment
+  - **Parenting Stress Assessment** - Evaluate parenting challenges
+  - **Relationship Satisfaction** - Assess relationship quality
 - 📱 **Responsive Design** - Works perfectly on desktop and mobile devices
 - 🎨 **Modern UI** - Clean, professional interface matching MDMZE branding
-- ⚡ **Fast & Secure** - Built with Next.js 14 and deployed on Vercel
+- ⚡ **Fast & Secure** - Built with Next.js 14.2.32 and deployed on Vercel
+
+## Latest Update (v0.1.1)
+- ✅ Added DASS-21 psychological assessment scale
+- ✅ Enhanced AI integration with assessment results
+- ✅ Updated to Next.js 14.2.32
+- ✅ Fixed security vulnerabilities
 
 ## Getting Started
 
