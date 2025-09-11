@@ -6,8 +6,8 @@
 
 :root {
   --foreground-rgb: 17, 17, 17;
-  --background-start-rgb: 249, 245, 234;
-  --background-end-rgb: 232, 249, 242;
+  --background-start-rgb: 249, 245, 234;  -- Your exact cream color
+  --background-end-rgb: 249, 245, 234;    -- Same cream for subtle gradient
 }
 
 body {

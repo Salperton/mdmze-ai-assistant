@@ -31,7 +31,7 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="card text-center">
             <MessageCircle className="w-12 h-12 text-primary-500 mx-auto mb-4" />
-            <h3 className="text-xl font-display font-semibold mb-3 text-neutral-900">AI Chat Support</h3>
+            <h3 className="text-xl font-display font-semibold mb-3 text-primary-500">AI Chat Support</h3>
             <p className="text-neutral-600 font-sans">
               Get instant answers to your family and parenting questions with our advanced AI assistant.
             </p>
@@ -39,7 +39,7 @@ export default function Home() {
           
           <div className="card text-center">
             <Brain className="w-12 h-12 text-secondary-500 mx-auto mb-4" />
-            <h3 className="text-xl font-display font-semibold mb-3 text-neutral-900">Psychological Assessments</h3>
+            <h3 className="text-xl font-display font-semibold mb-3 text-primary-500">Psychological Assessments</h3>
             <p className="text-neutral-600 font-sans">
               Take personalized assessments to better understand your situation and get tailored advice.
             </p>
@@ -47,7 +47,7 @@ export default function Home() {
           
           <div className="card text-center">
             <Users className="w-12 h-12 text-accent-500 mx-auto mb-4" />
-            <h3 className="text-xl font-display font-semibold mb-3 text-neutral-900">Expert Guidance</h3>
+            <h3 className="text-xl font-display font-semibold mb-3 text-primary-500">Expert Guidance</h3>
             <p className="text-neutral-600 font-sans">
               Access evidence-based strategies and professional insights for family challenges.
             </p>
