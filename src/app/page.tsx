@@ -13,7 +13,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 md:px-8 lg:px-12 py-8 max-w-7xl">
         {/* Hero Section */}
         <div className="text-center mb-12 py-12 rounded-xl" style={{ backgroundColor: 'rgb(249, 245, 234)' }}>
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-6" style={{ color: 'rgb(24, 64, 46)' }}>
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
           <div className="card text-center">
             <MessageCircle className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(24, 64, 46)' }} />
             <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>AI Chat Support</h3>
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
 
         {/* Main Interface */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="card">
             {/* Tab Navigation */}
             <div className="flex border-b border-neutral-200 mb-6">
