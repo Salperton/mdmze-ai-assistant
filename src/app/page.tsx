@@ -28,11 +28,6 @@ export default function Home() {
             Our AI-powered assistant combines psychological insights with expert guidance 
             to help you navigate life's challenges.
           </p>
-          <div className="bg-green-100 border border-green-400 text-green-700 px-6 py-4 rounded-lg mb-8 max-w-2xl mx-auto">
-            <strong>🆕 Updated!</strong> Now featuring DASS-21 psychological assessment scale for comprehensive mental health evaluation
-            <br />
-            <small className="text-sm opacity-75">Deployed: {new Date().toLocaleString()}</small>
-          </div>
         </div>
 
         {/* Feature Cards */}
