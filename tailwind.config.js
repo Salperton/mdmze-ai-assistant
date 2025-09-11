@@ -58,9 +58,9 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ['DM Sans', 'sans-serif'],
-        display: ['Gloock', 'Times New Roman', 'serif'],
-        body: ['Figtree', 'sans-serif'],
+        sans: ['Figtree', 'sans-serif'],        // For paragraphs and body text
+        display: ['Gloock', 'Times New Roman', 'serif'],  // For headers
+        body: ['Figtree', 'sans-serif'],        // For paragraphs
         mono: ['Ubuntu', 'monospace'],
       },
     },

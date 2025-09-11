@@ -21,7 +21,7 @@ body {
 
 @layer base {
   html {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Figtree', system-ui, sans-serif;
   }
 }
 
@@ -39,6 +39,6 @@ body {
   }
   
   .input-field {
-    @apply w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 font-body;
+    @apply w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 font-sans;
   }
 }

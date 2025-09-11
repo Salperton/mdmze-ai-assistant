@@ -20,7 +20,7 @@ export default function Home() {
             AI Family Support
             <span className="text-primary-500 block">Assistant</span>
           </h1>
-          <p className="text-xl font-body text-neutral-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl font-sans text-neutral-600 max-w-3xl mx-auto mb-8">
             Get instant, personalized advice on family matters, childcare, and divorce. 
             Our AI-powered assistant combines psychological insights with expert guidance 
             to help you navigate life's challenges.
@@ -31,24 +31,24 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="card text-center">
             <MessageCircle className="w-12 h-12 text-primary-500 mx-auto mb-4" />
-            <h3 className="text-xl font-sans font-semibold mb-3 text-neutral-900">AI Chat Support</h3>
-            <p className="text-neutral-600 font-body">
+            <h3 className="text-xl font-display font-semibold mb-3 text-neutral-900">AI Chat Support</h3>
+            <p className="text-neutral-600 font-sans">
               Get instant answers to your family and parenting questions with our advanced AI assistant.
             </p>
           </div>
           
           <div className="card text-center">
             <Brain className="w-12 h-12 text-secondary-500 mx-auto mb-4" />
-            <h3 className="text-xl font-sans font-semibold mb-3 text-neutral-900">Psychological Assessments</h3>
-            <p className="text-neutral-600 font-body">
+            <h3 className="text-xl font-display font-semibold mb-3 text-neutral-900">Psychological Assessments</h3>
+            <p className="text-neutral-600 font-sans">
               Take personalized assessments to better understand your situation and get tailored advice.
             </p>
           </div>
           
           <div className="card text-center">
             <Users className="w-12 h-12 text-accent-500 mx-auto mb-4" />
-            <h3 className="text-xl font-sans font-semibold mb-3 text-neutral-900">Expert Guidance</h3>
-            <p className="text-neutral-600 font-body">
+            <h3 className="text-xl font-display font-semibold mb-3 text-neutral-900">Expert Guidance</h3>
+            <p className="text-neutral-600 font-sans">
               Access evidence-based strategies and professional insights for family challenges.
             </p>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="text-center py-8 mt-12 text-neutral-600 font-body">
+        <footer className="text-center py-8 mt-12 text-neutral-600 font-sans">
           <p>Powered by MDMZE Family Support Center</p>
           <p className="text-sm mt-2">
             This AI assistant provides general guidance and should not replace professional counseling.

@@ -11,7 +11,7 @@ export default function Header() {
             </div>
             <div>
               <h1 className="text-xl font-display font-bold text-neutral-900">MDMZE</h1>
-              <p className="text-sm font-body text-neutral-600">Family Support Center</p>
+              <p className="text-sm font-sans text-neutral-600">Family Support Center</p>
             </div>
           </div>
           
