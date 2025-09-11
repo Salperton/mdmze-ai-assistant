@@ -15,12 +15,12 @@ export default function Home() {
       
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
-        <div className="text-center mb-12 py-12 rounded-xl" style={{ backgroundColor: 'rgb(231, 208, 185)' }}>
-          <h1 className="text-4xl md:text-6xl font-display font-bold text-neutral-900 mb-6">
+        <div className="text-center mb-12 py-12 rounded-xl" style={{ backgroundColor: 'rgb(248, 245, 234)' }}>
+          <h1 className="text-4xl md:text-6xl font-display font-bold mb-6" style={{ color: 'rgb(34, 139, 34)' }}>
             AI Family Support
-            <span className="text-primary-500 block">Assistant</span>
+            <span className="block" style={{ color: 'rgb(34, 139, 34)' }}>Assistant</span>
           </h1>
-          <p className="text-xl font-sans text-neutral-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl font-sans max-w-3xl mx-auto mb-8" style={{ color: 'rgb(64, 64, 64)' }}>
             Get instant, personalized advice on family matters, childcare, and divorce. 
             Our AI-powered assistant combines psychological insights with expert guidance 
             to help you navigate life's challenges.
@@ -30,25 +30,25 @@ export default function Home() {
         {/* Feature Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           <div className="card text-center">
-            <MessageCircle className="w-12 h-12 text-primary-500 mx-auto mb-4" />
-            <h3 className="text-xl font-display font-semibold mb-3 text-primary-500">AI Chat Support</h3>
-            <p className="text-neutral-600 font-sans">
+            <MessageCircle className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(34, 139, 34)' }} />
+            <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(34, 139, 34)' }}>AI Chat Support</h3>
+            <p className="font-sans" style={{ color: 'rgb(64, 64, 64)' }}>
               Get instant answers to your family and parenting questions with our advanced AI assistant.
             </p>
           </div>
           
           <div className="card text-center">
-            <Brain className="w-12 h-12 text-secondary-500 mx-auto mb-4" />
-            <h3 className="text-xl font-display font-semibold mb-3 text-primary-500">Psychological Assessments</h3>
-            <p className="text-neutral-600 font-sans">
+            <Brain className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(220, 38, 127)' }} />
+            <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(34, 139, 34)' }}>Psychological Assessments</h3>
+            <p className="font-sans" style={{ color: 'rgb(64, 64, 64)' }}>
               Take personalized assessments to better understand your situation and get tailored advice.
             </p>
           </div>
           
           <div className="card text-center">
-            <Users className="w-12 h-12 text-accent-500 mx-auto mb-4" />
-            <h3 className="text-xl font-display font-semibold mb-3 text-primary-500">Expert Guidance</h3>
-            <p className="text-neutral-600 font-sans">
+            <Users className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(34, 139, 34)' }} />
+            <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(34, 139, 34)' }}>Expert Guidance</h3>
+            <p className="font-sans" style={{ color: 'rgb(64, 64, 64)' }}>
               Access evidence-based strategies and professional insights for family challenges.
             </p>
           </div>

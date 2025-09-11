@@ -6,13 +6,17 @@
 
 :root {
   --foreground-rgb: 17, 17, 17;
-  --header-bg: 248, 245, 234;      -- #f8f5ea - Your exact header color
-  --masthead-bg: 231, 208, 185;    -- #e7d0b9 - Your exact main masthead background
-  --below-masthead-bg: 248, 245, 234; -- #f8f5ea - Your exact below masthead background
+  --header-bg: 248, 245, 234;      -- Light beige header
+  --masthead-bg: 248, 245, 234;    -- Light beige background
+  --below-masthead-bg: 248, 245, 234; -- Light beige background
+  --pink-button: 220, 38, 127;     -- Pink button color (approximate)
+  --green-button: 34, 139, 34;     -- Dark green button color (approximate)
+  --text-green: 34, 139, 34;       -- Dark green text
+  --text-gray: 64, 64, 64;         -- Dark gray text
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--text-gray));
   background: rgb(var(--below-masthead-bg));
 }
 
@@ -25,20 +29,20 @@ body {
 @layer components {
   .btn-primary {
     @apply text-white font-sans font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-sm;
-    background-color: #18402e; /* Your exact button color */
+    background-color: rgb(var(--green-button)); /* Dark green button */
   }
   
   .btn-primary:hover {
-    background-color: #153020;
+    background-color: rgb(28, 119, 28);
   }
   
   .btn-secondary {
     @apply text-white font-sans font-medium py-3 px-6 rounded-lg transition-colors duration-200 shadow-sm;
-    background-color: #da816c; /* Your exact button color */
+    background-color: rgb(var(--pink-button)); /* Pink button */
   }
   
   .btn-secondary:hover {
-    background-color: #c4735f;
+    background-color: rgb(200, 28, 107);
   }
   
   .card {
