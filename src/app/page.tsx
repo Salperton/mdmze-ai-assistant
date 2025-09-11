@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { MessageCircle, Brain, Users, Heart } from 'lucide-react'
+import { MessageCircle, Brain, Users, Heart, ArrowRight, BookOpen } from 'lucide-react'
+import Link from 'next/link'
 import ChatInterface from '@/components/ChatInterface'
 import AssessmentScales from '@/components/AssessmentScales'
 import Header from '@/components/Header'
@@ -31,7 +32,7 @@ export default function Home() {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           <Card className="text-center">
             <MessageCircle className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(24, 64, 46)' }} />
             <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>AI Chat Support</h3>
@@ -48,13 +49,33 @@ export default function Home() {
             </p>
           </Card>
           
-          <Card className="text-center">
-            <Users className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(24, 64, 46)' }} />
-            <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>Expert Guidance</h3>
-            <p className="font-sans" style={{ color: 'rgb(17, 17, 17)' }}>
-              Access evidence-based strategies and professional insights for family challenges.
-            </p>
-          </Card>
+          <Link href="/insights">
+            <Card className="text-center hover:shadow-lg transition-all duration-200 cursor-pointer group">
+              <Users className="w-12 h-12 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" style={{ color: 'rgb(24, 64, 46)' }} />
+              <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>Expert Guidance</h3>
+              <p className="font-sans mb-4" style={{ color: 'rgb(17, 17, 17)' }}>
+                Access evidence-based strategies and professional insights for family challenges.
+              </p>
+              <div className="inline-flex items-center text-sm font-sans font-medium" style={{ color: 'rgb(24, 64, 46)' }}>
+                View Research Insights
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Card>
+          </Link>
+
+          <Link href="/ncbi">
+            <Card className="text-center hover:shadow-lg transition-all duration-200 cursor-pointer group">
+              <BookOpen className="w-12 h-12 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" style={{ color: 'rgb(218, 129, 108)' }} />
+              <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>NCBI Research</h3>
+              <p className="font-sans mb-4" style={{ color: 'rgb(17, 17, 17)' }}>
+                Access real-time research studies from PubMed on parenting and child development.
+              </p>
+              <div className="inline-flex items-center text-sm font-sans font-medium" style={{ color: 'rgb(24, 64, 46)' }}>
+                Browse Studies
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Card>
+          </Link>
         </div>
 
         {/* Main Interface */}
