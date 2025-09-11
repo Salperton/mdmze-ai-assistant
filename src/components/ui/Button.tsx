@@ -47,8 +47,7 @@ export default function Button({
     <button
       className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
       style={{
-        backgroundColor: getBackgroundColor(),
-        '--hover-bg': getHoverColor()
+        backgroundColor: getBackgroundColor()
       }}
       onMouseEnter={(e) => {
         if (!disabled) {
