@@ -1,10 +1,12 @@
 'use client'
 
 import { useState } from 'react'
-import { MessageCircle, Brain, Users, Heart } from 'lucide-react'
+import { MessageCircle, Brain, Users, Heart, ArrowRight, BookOpen, Search, FileText, Clock } from 'lucide-react'
+import Link from 'next/link'
 import ChatInterface from '@/components/ChatInterface'
 import AssessmentScales from '@/components/AssessmentScales'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 
@@ -31,7 +33,7 @@ export default function Home() {
         </div>
 
         {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-16">
           <Card className="text-center">
             <MessageCircle className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(24, 64, 46)' }} />
             <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>AI Chat Support</h3>
@@ -48,13 +50,78 @@ export default function Home() {
             </p>
           </Card>
           
-          <Card className="text-center">
-            <Users className="w-12 h-12 mx-auto mb-4" style={{ color: 'rgb(24, 64, 46)' }} />
-            <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>Expert Guidance</h3>
-            <p className="font-sans" style={{ color: 'rgb(17, 17, 17)' }}>
-              Access evidence-based strategies and professional insights for family challenges.
-            </p>
-          </Card>
+          <Link href="/insights">
+            <Card className="text-center hover:shadow-lg transition-all duration-200 cursor-pointer group">
+              <Users className="w-12 h-12 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" style={{ color: 'rgb(24, 64, 46)' }} />
+              <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>Expert Guidance</h3>
+              <p className="font-sans mb-4" style={{ color: 'rgb(17, 17, 17)' }}>
+                Access evidence-based strategies and professional insights for family challenges.
+              </p>
+              <div className="inline-flex items-center text-sm font-sans font-medium" style={{ color: 'rgb(24, 64, 46)' }}>
+                View Research Insights
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Card>
+          </Link>
+
+          <Link href="/ncbi">
+            <Card className="text-center hover:shadow-lg transition-all duration-200 cursor-pointer group">
+              <BookOpen className="w-12 h-12 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" style={{ color: 'rgb(218, 129, 108)' }} />
+              <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>NCBI Research</h3>
+              <p className="font-sans mb-4" style={{ color: 'rgb(17, 17, 17)' }}>
+                Access real-time research studies from PubMed on parenting and child development.
+              </p>
+              <div className="inline-flex items-center text-sm font-sans font-medium" style={{ color: 'rgb(24, 64, 46)' }}>
+                Browse Studies
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Card>
+          </Link>
+
+          <Link href="/research-chat">
+            <Card className="text-center hover:shadow-lg transition-all duration-200 cursor-pointer group">
+              <Search className="w-12 h-12 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" style={{ color: 'rgb(24, 64, 46)' }} />
+              <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>Research AI Chat</h3>
+              <p className="font-sans mb-4" style={{ color: 'rgb(17, 17, 17)' }}>
+                Get evidence-based answers backed by real research from PubMed and DOAJ.
+              </p>
+              <div className="inline-flex items-center text-sm font-sans font-medium" style={{ color: 'rgb(24, 64, 46)' }}>
+                Ask Research Questions
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Card>
+          </Link>
+        </div>
+
+        {/* Article Cards */}
+        <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <Link href="/featured">
+            <Card className="text-center hover:shadow-lg transition-all duration-200 cursor-pointer group">
+              <FileText className="w-12 h-12 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" style={{ color: 'rgb(24, 64, 46)' }} />
+              <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>Featured Articles</h3>
+              <p className="font-sans mb-4" style={{ color: 'rgb(17, 17, 17)' }}>
+                Read our latest evidence-based articles on parenting and child development, updated weekly.
+              </p>
+              <div className="inline-flex items-center text-sm font-sans font-medium" style={{ color: 'rgb(24, 64, 46)' }}>
+                Read Articles
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Card>
+          </Link>
+
+          <Link href="/archive">
+            <Card className="text-center hover:shadow-lg transition-all duration-200 cursor-pointer group">
+              <Clock className="w-12 h-12 mx-auto mb-4 group-hover:scale-110 transition-transform duration-200" style={{ color: 'rgb(218, 129, 108)' }} />
+              <h3 className="text-xl font-display font-semibold mb-3" style={{ color: 'rgb(24, 64, 46)' }}>Article Archive</h3>
+              <p className="font-sans mb-4" style={{ color: 'rgb(17, 17, 17)' }}>
+                Browse our complete collection of research-backed articles and resources.
+              </p>
+              <div className="inline-flex items-center text-sm font-sans font-medium" style={{ color: 'rgb(24, 64, 46)' }}>
+                Browse Archive
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-200" />
+              </div>
+            </Card>
+          </Link>
         </div>
 
         {/* Main Interface */}
@@ -98,13 +165,18 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Admin and Design Test Links */}
+        <div className="text-center mb-8 space-x-6">
+          <Link href="/admin" className="inline-flex items-center text-sm font-sans font-medium hover:opacity-75 transition-opacity" style={{ color: 'rgb(218, 129, 108)' }}>
+            🔧 Article Management
+          </Link>
+          <Link href="/design-test" className="inline-flex items-center text-sm font-sans font-medium hover:opacity-75 transition-opacity" style={{ color: 'rgb(218, 129, 108)' }}>
+            🎨 Design Testing Mode
+          </Link>
+        </div>
+
         {/* Footer */}
-        <footer className="text-center py-8 mt-12 text-neutral-600 font-sans">
-          <p>Powered by Mind Maze Family Support Center</p>
-          <p className="text-sm mt-2">
-            This AI assistant provides general guidance and should not replace professional counseling.
-          </p>
-        </footer>
+        <Footer />
       </div>
     </main>
   )
