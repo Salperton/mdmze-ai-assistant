@@ -18,14 +18,17 @@ export default function Header() {
           </div>
           
           <div className="hidden md:flex items-center space-x-6">
+            <a href="/featured" className="font-sans transition-colors" style={{ color: 'rgb(17, 17, 17)' }}>
+              Articles
+            </a>
+            <a href="/admin" className="font-sans transition-colors" style={{ color: 'rgb(17, 17, 17)' }}>
+              Admin
+            </a>
+            <a href="/design-reference" className="font-sans transition-colors" style={{ color: 'rgb(17, 17, 17)' }}>
+              Design Reference
+            </a>
             <a href="https://www.mdmze.com" className="font-sans transition-colors" style={{ color: 'rgb(17, 17, 17)' }}>
               Main Website
-            </a>
-            <a href="#about" className="font-sans transition-colors" style={{ color: 'rgb(17, 17, 17)' }}>
-              About
-            </a>
-            <a href="#contact" className="font-sans transition-colors" style={{ color: 'rgb(17, 17, 17)' }}>
-              Contact
             </a>
           </div>
         </div>
