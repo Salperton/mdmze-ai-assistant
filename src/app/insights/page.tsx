@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { ArrowLeft, ExternalLink, BookOpen, Filter } from 'lucide-react'
 import Link from 'next/link'
 import { insightsData, categories, Insight } from '@/data/insights'
+import Footer from '@/components/Footer'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 
@@ -186,6 +187,8 @@ export default function InsightsPage() {
           </div>
         </div>
       </div>
+      
+      <Footer />
     </main>
   )
 }

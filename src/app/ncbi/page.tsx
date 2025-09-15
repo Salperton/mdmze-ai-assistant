@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { Search, Filter, ExternalLink, Calendar, Users, BookOpen, Loader2, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 interface PubMedArticle {
   uid: string
@@ -309,12 +310,7 @@ export default function NCBIResearchPage() {
         </div>
 
         {/* Footer */}
-        <footer className="text-center py-8 mt-12 font-sans" style={{ color: 'rgb(17, 17, 17)' }}>
-          <p>Powered by Mind Maze Family Support Center</p>
-          <p className="text-sm mt-2">
-            This AI assistant provides general guidance and should not replace professional counseling.
-          </p>
-        </footer>
+        <Footer />
       </div>
     </main>
   )

@@ -142,9 +142,9 @@ function parsePubMedXML(xml: string): PubMedArticle[] {
         authors: authors.slice(0, 5), // Limit to first 5 authors
         journal: cleanText(journal),
         pubDate: cleanText(pubDate),
-        doi,
+        doi: doi || undefined,
         pmid,
-        keywords: keywords.slice(0, 10) // Limit to first 10 keywords
+        keywords: keywords.filter(k => k !== null).slice(0, 10) // Limit to first 10 keywords
       })
     } catch (error) {
       console.error('Error parsing article:', error)
