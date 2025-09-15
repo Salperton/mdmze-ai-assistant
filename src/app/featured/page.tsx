@@ -65,7 +65,7 @@ export default function FeaturedPage() {
       }
     } catch (err) {
       console.error('Fetch Error:', err)
-      setError(`Failed to fetch articles: ${err.message}`)
+      setError(`Failed to fetch articles: ${err instanceof Error ? err.message : 'Unknown error'}`)
     } finally {
       console.log('Setting loading to false')
       setLoading(false)

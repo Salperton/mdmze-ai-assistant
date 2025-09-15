@@ -91,7 +91,7 @@ Write the article in markdown format with proper headings, bullet points, and fo
       const title = titleMatch ? titleMatch[1] : `Understanding ${topic}: A Parent's Guide`
 
       // Generate summary (first paragraph or first 150 characters)
-      const summaryMatch = content.match(/^#\s+.+$\n\n(.+?)(?:\n\n|$)/ms)
+      const summaryMatch = content.match(/^#\s+.+$\n\n(.+?)(?:\n\n|$)/m)
       const summary = summaryMatch ? summaryMatch[1].substring(0, 200) + '...' : content.substring(0, 200) + '...'
 
       // Determine category based on topic
@@ -153,7 +153,8 @@ Write the article in markdown format with proper headings, bullet points, and fo
       }
     })
     
-    return [...new Set([...baseTags, ...contentTags])].slice(0, 5)
+    const uniqueTags = Array.from(new Set([...baseTags, ...contentTags]))
+    return uniqueTags.slice(0, 5)
   }
 
   // Generate multiple articles for the week

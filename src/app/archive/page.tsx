@@ -176,10 +176,9 @@ export default function ArchivePage() {
                 placeholder="Search articles..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2"
+                className="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
                 style={{ 
-                  borderColor: 'rgb(218, 129, 108)',
-                  focusRingColor: 'rgb(218, 129, 108)'
+                  borderColor: 'rgb(218, 129, 108)'
                 }}
               />
             </div>
@@ -190,10 +189,9 @@ export default function ArchivePage() {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2"
+                className="px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400"
                 style={{ 
-                  borderColor: 'rgb(218, 129, 108)',
-                  focusRingColor: 'rgb(218, 129, 108)'
+                  borderColor: 'rgb(218, 129, 108)'
                 }}
               >
                 {categories.map(category => (
