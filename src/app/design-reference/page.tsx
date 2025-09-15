@@ -35,7 +35,7 @@ interface WebflowDesign {
 
 export default function DesignReferencePage() {
   const [designs, setDesigns] = useState<WebflowDesign[]>([])
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedType, setSelectedType] = useState('all')
@@ -43,20 +43,19 @@ export default function DesignReferencePage() {
   const [extractionUrl, setExtractionUrl] = useState('')
   const [extractionType, setExtractionType] = useState('all')
 
-  useEffect(() => {
-    loadDesigns()
-  }, [])
-
   const loadDesigns = async () => {
     try {
+      console.log('Loading designs...')
       setLoading(true)
       // In a real implementation, this would fetch from your database
       // For now, we'll use mock data
       setDesigns([])
+      console.log('Designs loaded (empty array)')
     } catch (err) {
       setError('Failed to load designs')
       console.error('Error loading designs:', err)
     } finally {
+      console.log('Setting loading to false')
       setLoading(false)
     }
   }
@@ -126,22 +125,7 @@ export default function DesignReferencePage() {
     }
   }
 
-  if (loading) {
-    return (
-      <main className="min-h-screen flex flex-col">
-        <Header />
-        <div className="flex-1 flex items-center justify-center">
-          <div className="text-center">
-            <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ backgroundColor: 'rgb(218, 129, 108)' }}>
-              <Palette className="w-8 h-8 text-white animate-pulse" />
-            </div>
-            <p className="text-lg" style={{ color: 'rgb(24, 64, 46)' }}>Loading design reference...</p>
-          </div>
-        </div>
-        <Footer />
-      </main>
-    )
-  }
+  console.log('Render state:', { loading, designs: designs.length })
 
   return (
     <main className="min-h-screen flex flex-col">
